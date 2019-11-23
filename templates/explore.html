@@ -1,0 +1,10 @@
+{% extends base.html %}
+{% block title %} index {% end %}
+
+{% block content %}
+  {% for img in img_list %}
+
+  <img src="{{ static_url(img) }}">
+  {% end %}
+
+{% end %}
